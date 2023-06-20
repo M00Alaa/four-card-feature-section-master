@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-dark-blue: hsl(234, 12%, 34%);
+    --Grayish-blue: hsl(229, 6%, 66%);
+    --Very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.row:first-child {
+    max-width: 39%;
+    text-align: center;
+    margin: 0 auto 32px auto;
+}
+
+.row:first-child p:first-child {
+    font-size: 25px;
+    font-weight: lighter;
+    color: var(--Very-dark-blue);
+}
+
+.row:first-child h1 {
+    font-size: 25px;
+    color: var(--Very-dark-blue);
+}
+
+.row:first-child p:last-child {
+    font-size: 11px;
+    font-weight: lighter;
+    color: var(--Grayish-blue);
+}
+
+.row:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row:last-child>div {
+    max-width: calc(95% / 3);
+}
+
+.first-col,
+.third-col,
+.sec-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-col .box {
+    border-top: 3px solid var(--Cyan);
+}
+
+.sec-col .box:first-child {
+    border-top: 3px solid var(--Red);
+    margin-bottom: 18px;
+}
+
+.sec-col .box:last-child {
+    border-top: 3px solid var(--Orange);
+}
+
+
+.third-col .box {
+    border-top: 3px solid var(--Blue);
+}
+
+.box {
+    background-color: #fff;
+    padding: 22px 36px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+
+    box-shadow: 5px 5px 10px #e1e1e1;
+}
+
+.box h3 {
+    color: var(--Very-dark-blue);
+    font-size: 18px;
+}
+
+.box p {
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--Grayish-blue);
+    margin-top: 12px;
+}
+
+.box svg {
+    align-self: end;
+    margin-top: 32px;
+}
