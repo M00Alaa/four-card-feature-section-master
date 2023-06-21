@@ -21,6 +21,10 @@ body {
     font-size: 15px;
     background-color: var(--Very-light-gray);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container {
