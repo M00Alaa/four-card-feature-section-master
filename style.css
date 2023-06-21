@@ -30,7 +30,26 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 0;
+    padding: 48px 0;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 90% !important;
+    }
+
+    .row:first-child {
+        max-width: 100% !important;
+    }
+
+    .row:last-child {
+        flex-direction: column;
+    }
+
+    .row:last-child>div {
+        max-width: 100% !important;
+        margin-bottom: 18px;
+    }
 }
 
 .row:first-child {
@@ -105,6 +124,7 @@ body {
     -o-border-radius: 6px;
 
     box-shadow: 5px 5px 10px #e1e1e1;
+    width: 100%;
 }
 
 .box h3 {
